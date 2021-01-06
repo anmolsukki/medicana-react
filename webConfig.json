@@ -1,0 +1,4 @@
+{
+    "siteURL": "https://medicana-app.herokuapp.com/",
+    "axiosInstance_baseURL": "https://api.graphcms.com"
+}

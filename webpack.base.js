@@ -1,6 +1,7 @@
 var config = require('./config');
 var webpack = require('webpack');
 var CompressionPlugin = require('compression-webpack-plugin');
+const webConfig = require('./webConfig.json');
 
 module.exports = {
   module: {
@@ -30,6 +31,9 @@ module.exports = {
             loader: 'css-loader',
             options: {
               importLoaders: 2,
+              minimize: true,
+              url: true,
+              root: webConfig.siteURL,
             },
           },
         ],
