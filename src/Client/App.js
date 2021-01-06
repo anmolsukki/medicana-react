@@ -3,13 +3,18 @@ import { connect } from 'react-redux';
 import { renderRoutes } from 'react-router-config';
 import { getUserAction } from '../Redux/Global/Action';
 import { HelmetTag } from '../Util/HelmetTag';
+import Headers from './Components/Headers';
 
 class App extends Component {
+  componentDidMount() {
+    document.body.classList.add('cnt-home');
+  }
+
   render() {
     return (
       <div>
-        <HelmetTag title="React App" description="React App Boillerplate" />
-        <div className="app">Name: {this.props.userData[0].name}</div>
+        <HelmetTag title="Medicana - Online Pharmacy India" description="Medicana - Online Pharmacy India | Buy Medicines from India's Trusted Medicine Store: Medicana" />
+        <Headers />
         {renderRoutes(this.props.route.routes)}
       </div>
     );
