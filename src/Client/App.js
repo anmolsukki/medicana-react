@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { renderRoutes } from 'react-router-config';
 import { getUserAction } from '../Redux/Global/Action';
 import { HelmetTag } from '../Util/HelmetTag';
+import Footer from './Components/MainComponent/Footer';
 import Headers from './Components/MainComponent/Headers';
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
         <HelmetTag title="Medicana - Online Pharmacy India" description="Medicana - Online Pharmacy India | Buy Medicines from India's Trusted Medicine Store: Medicana" />
         <Headers />
         {renderRoutes(this.props.route.routes)}
+        <Footer />
       </div>
     );
   }

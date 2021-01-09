@@ -1291,6 +1291,7 @@ header {
   -webkit-border-radius: 5px 0 0 5px;
   -moz-border-radius: 5px 0 0 5px;
   border-radius: 5px 0 0 5px;
+  height: fit-content;
   padding: 13px;
   width: 67%;
   background: #f6f6f6;
@@ -1342,6 +1343,7 @@ header {
   float: right;
   margin: 0px;
   padding: 12px 19px 12px;
+  height: fit-content;
   text-align: center;
   background-color: #fdd922;
   border: 1px solid #e0bc27;
@@ -3064,7 +3066,6 @@ header {
   font-family: 'Open Sans', sans-serif;
 }
 .cnt-strip .new-label {
-  background: url('../images/label.png') no-repeat scroll right top;
   height: 72px;
   position: absolute;
   left: -1px;

@@ -14,7 +14,7 @@ const app = express();
 //   '/api',
 //   proxy('https://medicana-app.herokuapp.com/', {
 //     proxyReqOptDecorator(opts) {
-//       opts.headers['x-forwarded-host'] = 'localhost:3000';
+//       opts.headers['x-forwarded-host'] = 'http://localhost:3000/';
 //       return opts;
 //     },
 //   })
