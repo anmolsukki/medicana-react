@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { renderRoutes } from 'react-router-config';
 import { getUserAction } from '../Redux/Global/Action';
 import { HelmetTag } from '../Util/HelmetTag';
-import Headers from './Components/Headers';
+import Headers from './Components/MainComponent/Headers';
 
 class App extends Component {
   componentDidMount() {

@@ -24,6 +24,7 @@ export default (req, store, context) => {
         ${helmet.meta.toString()}
         ${helmet.link.toString()}
         <meta charset="utf-8">
+        <meta name="theme-color" content="#000000" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta name="description" content="India's best online pharmacy with a wide range of Prescription and OTC medicines. Order medicines online at Medicana medicine store in 100+ cities like - Patna, Bihar etc. with free home delivery and exciting offers. Check Now!">
@@ -32,9 +33,20 @@ export default (req, store, context) => {
         <meta data-react-helmet="true" name="robots" content="INDEX, FOLLOW" />
         <meta data-react-helmet="true" name="googlebot" content="INDEX, FOLLOW">
 
+        <!-- Safari -->
+        <meta name="apple-mobile-web-app-apable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-title" content="ReactJS SSR" />
+
+        <!-- Internate Explorer -->
+        <meta name="msapplication-TileColor" content="#fff" />
+        <meta name="theme-color" content="#000000" />
+
         <link data-react-helmet="true" rel="canonical" href="https://medicana.co.in/"/>
         <link rel="icon" type="image/x-icon" rel="icon" href="/assets/images/favicon.ico">
         <link rel="stylesheet" type="text/css" href="/assets/css/main.css?v=1.1">
+        <link rel="stylesheet" type="text/css" href="/assets/css/LottieComponent.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/notFound.css">
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/blue.css">
         <link rel="stylesheet" href="/assets/css/owl.carousel.css">
