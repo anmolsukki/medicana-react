@@ -1,6 +1,8 @@
 var config = require('./config');
 var webpack = require('webpack');
+var path = require('path');
 var CompressionPlugin = require('compression-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   module: {
@@ -102,6 +104,9 @@ module.exports = {
       exclude: [/\.min\.js$/gi],
     }),
     new webpack.optimize.AggressiveMergingPlugin(),
+    new HtmlWebpackPlugin({
+      template: path.resolve('./public/index.html'),
+    }),
     new CompressionPlugin({
       asset: '[path].gz[query]',
       algorithm: 'gzip',
