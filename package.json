@@ -21,7 +21,6 @@
     "eslint": "^7.16.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.3.0",
-    "html-webpack-plugin": "^2.24.1",
     "prettier": "^2.2.1"
   },
   "dependencies": {
