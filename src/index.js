@@ -9,7 +9,6 @@ var bodyParser = require('body-parser');
 
 // const basicAuth = require('express-basic-auth');
 const app = express();
-const port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -58,6 +57,6 @@ app.get('*', (req, res) => {
     .catch((err) => console.log(err));
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   console.log(`server is up and running`);
 });
