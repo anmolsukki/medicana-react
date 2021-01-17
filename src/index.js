@@ -1,6 +1,5 @@
 import 'babel-polyfill';
 import express from 'express';
-// import proxy from 'express-http-proxy';
 import { matchRoutes } from 'react-router-config';
 import renderer from './Helpers/renderer';
 import Routes from './Helpers/router';
@@ -10,16 +9,6 @@ var bodyParser = require('body-parser');
 
 // const basicAuth = require('express-basic-auth');
 const app = express();
-// app.use(
-//   '/api',
-//   proxy('https://medicana-app.herokuapp.com/', {
-//     proxyReqOptDecorator(opts) {
-//       opts.headers['x-forwarded-host'] = 'http://localhost:3000/';
-//       return opts;
-//     },
-//   })
-// );
-
 const port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -69,6 +58,6 @@ app.get('*', (req, res) => {
     .catch((err) => console.log(err));
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   console.log(`server is up and running`);
 });
